@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Registrar Nueva Venta</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.producto.label }} {{ form.producto }}
+    </div>
+    <div>
+        {{ form.cantidad.label }} {{ form.cantidad }}
+    </div>
+    <div>
+        {{ form.total.label }} {{ form.total }}
+    </div>
+    <div>
+        {{ form.submit }}
+    </div>
+</form>
+{% endblock %}

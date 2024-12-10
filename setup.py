@@ -7,9 +7,9 @@ with app.app_context():
     db.create_all()  # Crear tablas si no existen
 
     # Crear un usuario de prueba
-    user = User(username='admin')
-    user.set_password('admin123')
+    user = User(username='jose')
+    user.set_password('huaycho')
     db.session.add(user)
     db.session.commit()
 
-    print("Usuario creado: admin / admin123")
+    print("Usuario creado: jose / huaycho")

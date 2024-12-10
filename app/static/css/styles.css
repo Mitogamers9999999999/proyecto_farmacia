@@ -1,0 +1,56 @@
+/* Cambiar el fondo de la página */
+body {
+    background-color: #fbf9fc;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilizar la barra de navegación */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar a {
+    color: #dbd3d3 !important;  /* Asegura que los enlaces sean blancos y visibles */
+    font-weight: bold;  /* Opcional: agrega un poco de negrita para mejor visibilidad */
+    text-decoration: none;  /* Elimina subrayado */
+    padding: 10px 15px;  /* Añade padding para mejorar la accesibilidad */
+}
+
+.navbar a:hover {
+    color: #ddd !important;  /* Cambia el color al pasar el mouse */
+    text-decoration: none;  /* Elimina subrayado en el hover */
+}
+
+/* Mejorar la apariencia de las tablas */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f9;
+}
+
+/* Estilo para los botones */
+.btn {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

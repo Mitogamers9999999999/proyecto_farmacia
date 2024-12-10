@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Título del Panel -->
+<h2 class="text-center my-4">Panel de Ventas</h2>
+
+<!-- Enlace de Registrar Venta con estilo de botón -->
+<div class="text-center mb-4">
+    <a href="{{ url_for('ventas.registrar') }}" class="btn btn-primary">Registrar Nueva Venta</a>
+</div>
+
+<!-- Tabla de ventas con Bootstrap -->
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for venta in ventas %}
+        <tr>
+            <td>{{ venta.id }}</td>
+            <td>{{ venta.producto }}</td>
+            <td>{{ venta.cantidad }}</td>
+            <td>{{ venta.total }}</td>
+            <td>{{ venta.fecha }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
